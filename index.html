@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<title>K HOMEPAGE</title>
+	<link href='http://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/frames.css" type=text/css">	
+	
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--
+<link rel="stylesheet" href="css/bootstrap.css">
+-->
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link href="css/quake.slider.css" rel="stylesheet" type="text/css" />
+    <link href="skins/dark-room/quake.skin.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/quake.slider-min.js" type="text/javascript"></script>
+    <script src="js/demo.js" type="text/javascript"></script>
+    <script src="js/velocity/jquery.velocity.js" type="text/javascript"></script>
+    <script src="js/velocity/jquery.velocity.min.js" type="text/javascript"></script>
+    <script src="js/velocity/velocity.ui.js" type="text/javascript"></script>
+    <script src="js/velocity/velocity.ui.min.js" type="text/javascript"></script>
+
+    <script src="js/velocity/Velocity.js" type="text/javascript"></script>
+<script>
+
+$(document).ready(function(){
+
+});
+</script>
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.quake-slider').quake({
+                thumbnails: true,
+                animationSpeed: 300,
+                applyEffectsRandomly: true,
+                navPlacement: 'inside',
+                navAlwaysVisible: true,
+                captionOpacity: '0.3',
+                captionsSetup: [
+                                 {
+                                     "orientation": "top",
+                                     "slides": [0, 1],
+                                     "callback": captionAnimateCallback
+                                 },
+                                  {
+                                      "orientation": "left",
+                                      "slides": [2, 3],
+                                      "callback": captionAnimationCallback1
+                                  }
+                                  ,
+                                  {
+                                      "orientation": "bottom",
+                                      "slides": [4, 5],
+                                      "callback": captionAnimateCallback
+                                  }
+                                  ,
+                                  {
+                                      "orientation": "right",
+                                      "slides": [6, 7],
+                                      "callback": captionAnimationCallback1
+                                  }
+                                ]
+
+            });
+
+            function captionAnimateCallback(captionWrapper, captionContainer, orientation) {
+                captionWrapper.css({ left: '-990px' }).stop(true, true).animate({ left: 0 }, 500);
+                captionContainer.css({ left: '-990px' }).stop(true, true).animate({ left: 0 }, 500);
+            }
+            function captionAnimationCallback1(captionWrapper, captionContainer, orientation) {
+                captionWrapper.css({ top: '-330px' }).stop(true, true).animate({ top: 0 }, 500);
+                captionContainer.css({ top: '-330px' }).stop(true, true).animate({ top: 0 }, 500);
+            }
+        });
+    </script>
+
+</head>
+
+<style>
+
+#f1{
+position:relative;
+left:-100px;
+}
+#f2{
+position:relative;
+left:-100px;
+}
+
+#f3{
+position:relative;
+left:-100px;
+}
+.box-wrapper{
+top:0px;
+width:100%;
+height:800px;
+background:url(img/tex1.1.jpg);
+position:relative;
+
+}
+
+.box-wrapper .box{
+margin:30px;
+width:300px; height:300px;
+border-radius:50%;
+box-shadow:3px 4px 3px white;
+position:relative;
+float:left;
+border:2px solid black;
+}
+.box .box-text{
+position:relative;
+top:100px; left:20px;
+width:260px; height:90px;
+background-color:rgba(255,150,0,0.4);
+text-align:center;
+color:black;
+font-size:0.6em;
+font-family:Luckiest Guy;
+letter-spacing:2px;
+line-height:3;
+-moz-transition:all 0.5s;
+-webkit-transition:all 0.5s;
+text-shadow:1px 1px 1px white;
+}
+
+@-webkit-keyframes bob{
+50%{top:-20px;}
+100%{top:-10px;}
+}
+@-moz-keyframes bob{
+50%{top:-20px;}
+100%{top:-10px;}
+}
+
+.box:hover{
+cursor:pointer;
+}
+
+#b1{
+background:url(img/tex12.jpg),url(img/tex12.jpg);
+background-repeat:no-repeat;
+background-size:cover;
+background-size:150px 300px;
+background-position:0px 0px,150px 0px;
+box-shadow:inset 0 0 0 20px rgba(255,255,255,0.7);
+-moz-transition:all 0.6s ease-in-out;
+-webkit-transition:all 0.6s ease-in-out;
+background-color:orange;
+}
+
+#b2{
+background:url(img/tex13.jpg),url(img/tex13.jpg);
+background-repeat:no-repeat;
+background-size:cover;
+background-size:300px 150px;
+background-position:0px 0px,0px 150px;
+box-shadow:inset 0 0 0 20px rgba(30,10,110,0.4);
+-moz-transition:all 0.6s ease-in-out;
+-webkit-transition:all 0.6s ease-in-out;
+background-color:coral;
+}
+
+#b3{
+background:url(img/tex3.jpg);
+background-repeat:no-repeat;
+background-size:cover;
+background-size:300px 300px;
+background-position:0px 0px;
+box-shadow:inset 0 0 0 20px rgba(255,150,0,0.5);
+-moz-transition:all 0.6s ease-in-out;
+-webkit-transition:all 0.6s ease-in-out;
+background-color:#ffff77;
+}
+
+#b1:hover{
+-webkit-animation:LRout 0.6s ease-in-out forwards;
+-moz-animation:LRout 0.6s ease-in-out forwards;
+box-shadow:inset 0 0 0 20px rgba(255,255,255,0.8),10px 10px 14px rgba(255,255,255,0.5),
+10px -10px 14px rgba(255,255,255,0.5),
+-10px 10px 14px rgba(255,255,255,0.5),
+-10px -10px 14px rgba(255,255,255,0.5);
+}
+
+#b2:hover{
+-webkit-animation:UDout 0.6s ease-in-out forwards;
+-moz-animation:UDout 0.6s ease-in-out forwards;
+box-shadow:inset 0 0 0 20px rgba(30,10,110,0.4),10px 10px 14px rgba(255,255,255,0.5),
+10px -10px 14px rgba(255,255,255,0.5),
+-10px 10px 14px rgba(255,255,255,0.5),
+-10px -10px 14px rgba(255,255,255,0.5);
+}
+
+#b3:hover{
+-webkit-animation:out 0.6s ease-in-out forwards;
+-moz-animation:out 0.6s ease-in-out forwards;
+box-shadow:inset 0 0 0 20px  rgba(255,150,0,0.5),10px 10px 14px rgba(255,255,255,0.5),
+10px -10px 14px rgba(255,255,255,0.5),
+-10px 10px 14px rgba(255,255,255,0.5),
+-10px -10px 14px rgba(255,255,255,0.5);
+}
+.box:hover .box-text{
+border:1px dashed black;
+
+}
+#b1:hover .box-text:nth-child(1){
+background-color:rgba(255,255,255,0.6);
+}
+#b2:hover .box-text:nth-child(2){
+background-color:rgba(50,15,100,0.8);
+}
+#b3:hover .box-text:nth-child(3){
+background-color:rgba(0,255,100,0.8);
+}
+
+@-webkit-keyframes LRout{
+100%{ background-position:-120px 0px,270px 0px;}
+}
+@-moz-keyframes LRout{
+100%{ background-position:-120px 0px,270px 0px;}
+}
+
+
+
+@-webkit-keyframes UDout{
+100%{ background-position:0px -120px,0px 270px;}
+}
+@-moz-keyframes UDout{
+100%{ background-position:0px -120px,0px 270px;}
+}
+
+
+
+@-webkit-keyframes out{
+100%{ background-position:-270px 0px;}
+}
+@-moz-keyframes out{
+100%{ background-position:-270px 0px;}
+}
+body{
+height:100px;
+visibility:visible;
+}
+
+.box .frame{
+width:500px; height:300px;
+position:relative;
+top:0px; left:200px;
+background:url(img/bg.jpg);
+border:2px solid black;
+box-shadow:inset 0 0 0 20px  rgba(0,0,0,0.1),10px 10px 14px rgba(255,255,255,0.5),
+10px -10px 14px rgba(255,255,255,0.5),
+-10px 10px 14px rgba(255,255,255,0.5),
+-10px -10px 14px rgba(255,255,255,0.5);
+border-radius:20px;
+z-index:9999;
+-webkit-transition:all 0.5s;
+-moz-transition:all 0.5s;
+visibility:hidden;
+}
+.frame .frame-text{
+font-size:1em;
+text-align:center;
+margin:10px;
+font-family:Luckiest Guy;
+}
+</style>
+
+<body>
+
+	
+	<div id="intro">
+		<h1 id="title">
+			<span id="title-line1" class="title-line">EXPLORE</span>
+			<span id="title-line2" class="title-line">KURUK</span>
+			<span id="title-line3" class="title-line">SHETRA</span>
+
+
+		</h1>
+<div class="bubble" style="font-size:0.7em;top:-120px; position:relative; color:white;-moz-animation:blinker 1s linear infinite; -webkit-animation:blinker 1s linear infinite">SCROLL DOWN!</div>
+	
+</div>
+
+<div class="wrap-all">
+
+<div class="box-wrapper">
+	<span class="boxes"><div class="box" id="b1">
+<div class="box-text">EVENTS</div>
+<div class='frame' id="f1">
+	<div class="frame-text"> How do u do?
+How do u do?How do u do?
+
+
+
+</div>
+</div>
+
+</div></span>
+	<span class="boxes"><div class="box" id="b2">
+<div class="box-text" style="background-color:rgba(90,10,100,0.3);
+">WORKSHOPS</div>
+<div class='frame' id="f2">
+	<div class="frame-text"> How do u do?
+How do u do?How do u do?
+
+
+
+</div>
+</div>
+
+
+</div></span>
+	<span class="boxes"><div class="box" id="b3">
+
+<div class="box-text" style="background-color:rgba(255,250,0,0.4);
+">LECTURES</div>
+<div class='frame' id="f3">
+
+<div class="frame-text"> How do u do?
+How do u do?How do u do?
+
+
+
+</div>
+</div>
+
+</div></span>
+
+	
+</div>
+
+
+
+
+
+
+</div>
+<!--wrap-all-->
+
+
+
+
+
+
+	<script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  	<script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+  	<script src="js/jquery.lettering-0.6.1.min.js"></script>
+	<script src="js/jquery.superscrollorama.js"></script>
+	<script src="js/iscroll.js"></script>
+	<script>
+		$(document).ready(function() {
+			// set rotation of flash
+			TweenMax.set("#newversion", {rotation: 15});
+
+			$('body').css('visibility','visible');
+
+
+
+
+
+			// hide content until after title animation
+			$('.wrap-all').css('display','none');
+			// lettering.js to split up letters for animation
+			$('#title-line1').lettering();
+			$('#title-line2').lettering();
+			$('#title-line3').lettering();
+			
+			// TimelineLite for title animation, then start up superscrollorama when complete
+			(new TimelineLite({onComplete:initScrollAnimations}))
+				.from( $('#title-line1 .char1'), .25, {css:{left:'1000px'}, ease:Back.easeOut})
+.from( $('#title-line1 .char2'), .25, {css:{left:'1000px'}, ease:Back.easeOut})
+.from( $('#title-line1 .char3'), .25, {css:{left:'1000px'}, ease:Back.easeOut})
+				.from( $('#title-line1 .char4'), .25, {css:{left:'1000px'}, ease:Back.easeOut})
+				.from( $('#title-line1 .char5'), .25, {css:{left:'1000px'}, ease:Back.easeOut})
+				.from( $('#title-line1 .char6'), .25, {css:{left:'1000px'}, ease:Back.easeOut})
+.from( $('#title-line1 .char7'), .25, {css:{left:'1000px'}, ease:Back.easeOut})
+				
+				
+				.from( $('#title-line2 .char1'), .25, {css:{top:'1000px',opacity:'0'}, ease:Elastic.easeOut})
+.from( $('#title-line2 .char2'), .25, {css:{top:'1000px',opacity:'0'}, ease:Elastic.easeOut})
+	.from( $('#title-line2 .char3'), .25, {css:{top:'1000px',opacity:'0'}, ease:Elastic.easeOut})
+.from( $('#title-line2 .char4'), .25, {css:{top:'1000px',opacity:'0'}, ease:Elastic.easeOut})
+	.from( $('#title-line2 .char5'), .25, {css:{top:'1000px',opacity:'0'}, ease:Elastic.easeOut})
+.from( $('#title-line2 .char6'), .25, {css:{top:'1000px',opacity:'0'}, ease:Elastic.easeOut})
+			
+				
+
+
+				.append([
+					TweenMax.from( $('#title-line3 .char1'), .25+Math.random(), {css:{top: '-200px', right:'1000px'}, ease:Elastic.easeOut}),
+					TweenMax.from( $('#title-line3 .char2'), .25+Math.random(), {css:{top: '300px', right:'1000px'}, ease:Elastic.easeOut}),
+					TweenMax.from( $('#title-line3 .char3'), .25+Math.random(), {css:{top: '-400px', right:'1000px'}, ease:Elastic.easeOut}),
+					TweenMax.from( $('#title-line3 .char4'), .25+Math.random(), {css:{top: '-200px', left:'1000px'}, ease:Elastic.easeOut}),
+					TweenMax.from( $('#title-line3 .char5'), .25+Math.random(), {css:{top: '200px', left:'1000px'}, ease:Elastic.easeOut}),
+TweenMax.from( $('#title-line3 .char6'), .25+Math.random(), {css:{top: '-200px', left:'1000px'}, ease:Elastic.easeOut})
+				])
+				.from("#newversion", .4, {scale: 5, autoAlpha: 0, ease: Elastic.easeOut})
+				.to( $('#title-info'), .5, {css:{opacity:.99, 'margin-top':0}, delay:-1, ease:Quad.easeOut});
+
+			function initScrollAnimations() {
+
+$(".boxes").animate({'opacity':"0"});
+
+				$('.wrap-all').css('display','block');
+
+
+			var controller = $.superscrollorama();
+				// title tweens
+
+//boxes
+$('.box-wrapper').delay(100).velocity("scroll",600);
+
+$(".boxes").delay(200).velocity("transition.bounceUpIn",{stagger: 600,backwards:true,opacity:1});
+
+$("#b1").hover(function(){
+
+$(this).find("#f1").css({'visibility':"visible",'top':"200px",'left':"-100px"},"fast");
+},
+function(){
+$(this).find("#f1").css({'visibility':"hidden",'top':"600px"},"fast");
+});
+
+
+$("#b2").hover(function(){
+
+$(this).find("#f2").css({'visibility':"visible",'top':"200px",'left':"-100px"},"fast");
+},
+function(){
+$(this).find("#f2").css({'visibility':"hidden",'top':"-700px"},"fast");
+});
+
+$("#b3").hover(function(){
+
+$(this).find("#f3").css({'visibility':"visible",'top':"200px",'left':"-100px"},"fast");
+},
+function(){
+$(this).find("#f3").css({'visibility':"hidden",'top':"600px"},"fast");
+});
+
+
+
+
+
+
+//slide
+
+controller.addTween('.quake-slider-wrapper', TweenMax.from( $('.quake-slider-wrapper'), 0.5, {css:{right:'2000px'}, ease:Quad.easeInOut}));
+//wipe-down
+
+controller.addTween('.wrapper', TweenMax.from( $('.wrapper'), 0.5, {css:{opacity:1}, ease:Quad.easeInOut}));
+
+controller.addTween('.wrapper', TweenMax.to( $('.wrapper'), 0.5, {css:{opacity:1}, ease:Quad.easeInOut}));
+
+controller.addTween('.quake-slider-wrapper', TweenMax.from( $('.quake-slider-wrapper'), 0.5, {css:{'background-color':'orange'}, ease:Quad.easeInOut}));
+
+
+
+			$('.title-line span').each(function() {
+					controller.addTween(10, TweenMax.to(this, .5, {css:{top: Math.random()*-200-600, left: (Math.random()*1000)-500, rotation:Math.random()*720-360, 'font-size': Math.random()*300+150}, ease:Quad.easeOut}),200);
+				});
+				controller.addTween(10, TweenMax.to($('#title-line1'), .3, {css:{top: 600,borderTop:'3px dashed rgba(255,255,255,0'}, ease:Quad.easeOut}),200);
+				controller.addTween(10, TweenMax.to($('#title-line2'), .3, {css:{top: 200,borderTop:'3px solid rgba(255,255,255,0',borderBottom:'3px solid rgba(255,255,255,0'}, ease:Quad.easeOut}),200);
+				controller.addTween(10, TweenMax.to($('#title-line3'), .3, {css:{top: -100,borderBottom:'3px dashed rgba(255,255,255,0'}, ease:Quad.easeOut},200));
+		
+
+//slide-it
+
+}
+
+
+
+function title3(){
+setInterval(function(){
+$("#title-line3 .char1").addClass("blinkme");},100);
+$("#title-line3 .char1").removeClass("blinkme");
+
+setInterval(function(){
+$("#title-line3 .char2").addClass("blinkme");},200);
+$("#title-line3 .char2").removeClass("blinkme");
+
+setInterval(function(){
+$("#title-line3 .char3").addClass("blinkme");},300);
+$("#title-line3 .char3").removeClass("blinkme");
+
+setInterval(function(){
+$("#title-line3 .char4").addClass("blinkme");},400);
+$("#title-line3 .char4").removeClass("blinkme");
+
+setInterval(function(){
+$("#title-line3 .char5").addClass("blinkme");},500);
+$("#title-line3 .char5").removeClass("blinkme");
+
+setInterval(function(){
+$("#title-line3 .char6").addClass("blinkme");},600);
+$("#title-line3 .char6").removeClass("blinkme");
+}
+function title2(){
+
+//title2
+setInterval(function(){$("#title-line2 .char5").addClass("blinkme");},100);
+$("#title-line2 .char5").removeClass("blinkme");
+
+setInterval(function(){
+$("#title-line2 .char4").addClass("blinkme");},200);
+$("#title-line2 .char4").removeClass("blinkme");
+
+setInterval(function(){
+$("#title-line2 .char3").addClass("blinkme");},300);
+$("#title-line2 .char3").removeClass("blinkme");
+
+setInterval(function(){
+$("#title-line2 .char2").addClass("blinkme");},400);
+$("#title-line2 .char2").removeClass("blinkme");
+
+setInterval(function(){
+$("#title-line2 .char1").addClass("blinkme");},500);
+$("#title-line2 .char1").removeClass("blinkme");
+
+}
+
+function title1(){
+
+//title1
+setInterval(function(){$("#title-line1 .char1").addClass("blinkme2");},100);
+$("#title-line1 .char2").removeClass("blinkme2");
+
+setInterval(function(){$("#title-line1 .char2").addClass("blinkme2");},200);
+$("#title-line1 .char2").removeClass("blinkme2");
+
+setInterval(function(){$("#title-line1 .char3").addClass("blinkme2");},300);
+$("#title-line1 .char2").removeClass("blinkme2");
+
+
+setInterval(function(){$("#title-line1 .char4").addClass("blinkme2");},400);
+$("#title-line1 .char2").removeClass("blinkme2");
+
+setInterval(function(){$("#title-line1 .char5").addClass("blinkme2");},500);
+$("#title-line1 .char2").removeClass("blinkme2");
+
+setInterval(function(){$("#title-line1 .char6").addClass("blinkme2");},600);
+$("#title-line1 .char2").removeClass("blinkme2");
+
+
+setInterval(function(){$("#title-line1 .char7").addClass("blinkme2");},700);
+$("#title-line1 .char2").removeClass("blinkme2");
+
+}
+
+title3();
+title2();
+title1();
+
+
+
+		});
+	</script>
+<script>
+$(document).ready(function(){
+$('html,body').scrollTop(0);
+
+$('body').keydown(function(e){
+if(e.which==40)
+{
+$('html,body').animate({scrollTop:($(window).scrollTop()+830)+'px'},5);
+}
+else if(e.which==38)
+{
+$('html,body').animate({scrollTop:($(window).scrollTop()-830)+'px'},20);
+}
+});
+
+});
+
+
+</script>
+
+</body></html>

@@ -1,0 +1,199 @@
+/* Simple Reset 
+================================================== */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* HTML5 
+================================================== */
+header, nav, section, article, aside, footer {
+	display: block;
+}
+
+
+/* Basic Styles & Typography
+================================================== */
+
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 100%; /* 16px */
+	line-height: 1.5em;
+}
+
+/*
+Using a Traditional scale: 6, 7, 8, 9, 10, 11, 12, 14, 16, 18, 21, 24, 36, 48, 60, 72
+
+	h1 = 60 pixels → 60 ÷ 16 = 3.75 em
+	h2 = 48 pixels → 48 ÷ 16 = 3 em
+	h3 = 36 pixels → 36 ÷ 16 = 2.25 em
+	h4 = 24 pixels → 24 ÷ 16 = 1.5 em
+	h5 = 21 pixels → 21 ÷ 16 = 1.3125 em
+	h6 = 18 pixels → 18 ÷ 16 = 1.125 em
+*/
+
+h1, h2, h3, h4, h5, h6 { margin-bottom: .5em; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+h1 { font-size: 3.75em; line-height: 1.1em; }
+h2 { font-size: 3em; line-height: 1.15em; }
+h3 { font-size: 2.25em; line-height: 1.2em; }
+h4 { font-size: 1.5em; line-height: 1.25em; }
+h5 { font-size: 1.3125em; line-height: 1.3em; }
+h6 { font-size: 1.125em; line-height: 1.35em; }
+
+/* Spacing Paragraphs */
+p { 
+	margin-bottom: 1.25em; 
+}
+
+/* #Links
+================================================== */
+	a { color: #39c; text-decoration: underline; outline: 0; }
+	a:hover, a:focus { color: #39c; }
+	p a, p a:visited { line-height: inherit; }
+
+
+/* #Images
+================================================== */
+img {
+	max-width: 100%;
+	height: auto; 
+}
+
+
+/* #Lists
+================================================== */
+ul, ol { 
+	margin: 0 0 1.25em 0; 
+	clear: both;
+}
+
+li {
+	clear: both;
+	/*margin: 0 0 0 1.875em; */
+}
+
+ul li ul li, ol li ol li, ol li ul li, ul li ol li { 
+	margin: 0 0 0px 1.875em; 
+}
+
+/*----------------------------------------  HEADER  */
+
+header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background: #000;
+}
+
+header .logo {
+	text-align: center;
+}
+
+header .logo h1 {
+	margin: 0;
+	padding: 20px 20px 0 20px;
+	font-size: 1.25em;
+	line-height: 1.25em;
+	color: #fff;
+}
+
+header p.tagline {
+	margin: 0;
+	padding: 0 20px 20px 20px;
+	font-size: .4em;
+	line-height: 1em;
+	color: #ccc;
+}
+
+/*----------------------------------------  BLOCKS */
+
+#console {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: #000;
+	padding: 3px 10px;
+	margin: 0;
+	z-index: 99;
+	width: 100%;
+	color: #ccc;
+	text-align: center;
+	font-size: .875em;
+}
+
+.scrollblock {
+	position: relative;
+	width: 80%;
+	padding: 200px 10%;
+	text-align: center;
+}
+
+
+
+#title {
+	margin: 10% auto;
+	width: 80%;
+	position: relative;
+	z-index: 99;
+}
+
+#author {
+	clear: both;
+}
+
+#examples-parallax {
+	overflow: hidden;
+}
+
+#parallax2 {
+	position: absolute;
+	top: 200px;
+	left: -50px;
+	color: #C5C3DE;
+	opacity: .2;
+	font-size: 210px;
+	text-shadow: none;
+}
+
+#parallax3 {
+	position: absolute;
+	top: 320px;
+	right: 40px;
+	color: #C5C3DE;
+	opacity: .4;
+	font-size: 160px;
+	text-shadow: none;
+}
+
+
+.param-list {
+	color: #666;
+	font-size: 1em;
+	line-height: 1.4;
+	padding: 0 18px;
+	list-style: none;
+}
+
+.param-list li {
+	padding-bottom: 20px;
+}
+
+.param {
+	display: block;
+	color: #333;
+	font-size: 1.5em;
+}
+
+.param-def small {
+	display: block;
+	font-weight: normal;
+	font-style: italic;
+}
+
+#credits {
+	height: 525px;
+	margin-top: 100px;
+}
